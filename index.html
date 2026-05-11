@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natasya Mora — Informatics Visionaries</title>
+  <title>Dicky Dermawan • HIMAFOR</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
       scroll-behavior: smooth;
     }
 
-    /* animated grain texture */
+    /* animated grain & glow */
     body::before {
       content: "";
       position: fixed;
@@ -57,22 +57,6 @@
       max-width: 1280px;
       margin: 0 auto;
       padding: 2rem 2rem 5rem;
-    }
-
-    /* modern glassmorphism */
-    .glass-card {
-      background: rgba(10, 20, 40, 0.55);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(70, 130, 200, 0.25);
-      border-radius: 2.5rem;
-      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.4);
-      transition: all 0.3s ease;
-    }
-
-    .glass-card:hover {
-      border-color: rgba(0, 180, 255, 0.5);
-      box-shadow: 0 25px 40px -12px rgba(0, 160, 255, 0.25);
-      transform: translateY(-3px);
     }
 
     header {
@@ -166,7 +150,6 @@
       transform: scale(1.02);
     }
 
-    /* stats grid */
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -284,33 +267,20 @@
       .hero { text-align: center; }
       .chip { margin-left: auto; margin-right: auto; }
     }
-
-    /* add micro animation */
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      100% { transform: translateY(-6px); }
-    }
-
-    .visual, .stat-item, .mission-card {
-      animation: float 0s ease infinite;
-    }
-    .stat-item:nth-child(1) { transition-delay: 0.05s; }
-    .stat-item:nth-child(2) { transition-delay: 0.1s; }
-    .stat-item:nth-child(3) { transition-delay: 0.15s; }
   </style>
 </head>
 <body>
 <div class="glow-bg"></div>
 <main class="page">
-  <!-- header area keren -->
+  <!-- header -->
   <header>
     <div class="hero">
       <div class="chip">
         <i class="fas fa-bolt" style="font-size: 0.8rem;"></i> 
-        <span>HIMATIF · NEXT GEN TECH</span>
+        <span>HIMAFOR · NEXT GEN TECH</span>
       </div>
       <h1>Bangun masa depan digital <br> yang cerdas & berdampak</h1>
-      <p>Kami adalah ekosistem untuk para inovator muda — kolaborasi tanpa batas, eksplorasi teknologi mutakhir, dan pengabdian yang membuka peluang nyata. Bersama, ciptakan transformasi digital berkelanjutan.</p>
+      <p>Himpunan Mahasiswa Informatika (HIMAFOR) adalah ekosistem untuk para inovator muda — kolaborasi tanpa batas, eksplorasi teknologi mutakhir, dan pengabdian yang membuka peluang nyata. Bersama, ciptakan transformasi digital berkelanjutan.</p>
       <a href="#visi-misi" class="btn-primary">
         <span>Jelajahi visi kami</span>
         <i class="fas fa-arrow-right"></i>
@@ -321,7 +291,7 @@
     </div>
   </header>
 
-  <!-- stats modern dengan ikon -->
+  <!-- stats modern -->
   <div class="stats-grid">
     <div class="stat-item">
       <i class="fas fa-users stat-icon"></i>
@@ -369,9 +339,9 @@
     </div>
   </section>
 
-  <!-- nilai inti dengan gaya lebih ciamik -->
+  <!-- nilai inti -->
   <section style="margin-bottom: 3rem;">
-    <h2 class="section-title">⚡ Nilai Inti Kami</h2>
+    <h2 class="section-title">⚡ Nilai Inti HIMAFOR</h2>
     <p class="section-sub">Kami percaya perubahan lahir dari semangat tanpa kompromi pada kualitas, kolaborasi dan keberlanjutan.</p>
     <div class="values-wrap">
       <div class="value-block">
@@ -397,21 +367,21 @@
     </div>
   </section>
 
-  <!-- tambahan highlight quotes dengan sentuhan modern -->
+  <!-- quote block -->
   <div style="display: flex; justify-content: center; margin: 2rem 0 2rem;">
     <div style="background: linear-gradient(115deg, #101b30, #07112a); border-radius: 2rem; padding: 1.5rem 2rem; text-align: center; max-width: 700px; border: 1px solid rgba(79, 164, 255, 0.4); backdrop-filter: blur(8px);">
       <i class="fas fa-quote-left" style="font-size: 1.6rem; color: #45aaff; opacity: 0.7;"></i>
-      <p style="font-style: italic; font-size: 1rem; margin: 0.5rem 0;">"Himpunan Mahasiswa Informatika bukan sekadar organisasi, tapi gerakan untuk merancang masa depan teknologi yang lebih manusiawi dan inklusif."</p>
-      <p style="font-weight: 500; margin-top: 0.5rem;">— Ketua HIMATIF 2025</p>
+      <p style="font-style: italic; font-size: 1rem; margin: 0.5rem 0;">"HIMAFOR bukan sekadar organisasi, tapi gerakan untuk merancang masa depan teknologi yang lebih manusiawi dan inklusif."</p>
+      <p style="font-weight: 500; margin-top: 0.5rem;">— Dicky Dermawan, Ketua HIMAFOR 2025</p>
     </div>
   </div>
 
-  <!-- footer lebih premium -->
+  <!-- footer dengan nama anda -->
   <footer class="footer-modern">
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
       <div>
-        <h3 style="font-weight: 700; letter-spacing: -0.2px;">✦ HIMATIF</h3>
-        <p style="font-size: 0.75rem; margin-top: 0.2rem;">Informatics Student Association — NextGen Coders</p>
+        <h3 style="font-weight: 700; letter-spacing: -0.2px;">✦ HIMAFOR</h3>
+        <p style="font-size: 0.75rem; margin-top: 0.2rem;">Himpunan Mahasiswa Informatika — NextGen Coders</p>
       </div>
       <div style="display: flex; gap: 24px;">
         <i class="fab fa-instagram" style="font-size: 1.4rem; transition: 0.2s; cursor: pointer;"></i>
@@ -420,8 +390,8 @@
       </div>
     </div>
     <hr style="margin: 1.5rem 0 1rem; border-color: rgba(84, 166, 255, 0.2);">
-    <p style="color:#96b3e0; font-size: 0.8rem;">Natasya Mora_2388010011 — Membangun generasi digital yang visioner, kritis, dan terdepan dalam kebaikan.</p>
-    <p style="margin-top: 0.8rem; font-size: 0.7rem;">#KodeMasaDepan | #HIMATIFImpact</p>
+    <p style="color:#96b3e0; font-size: 0.8rem;">Dicky Dermawan — Membangun generasi digital yang visioner, kritis, dan terdepan dalam kebaikan.</p>
+    <p style="margin-top: 0.8rem; font-size: 0.7rem;">#KodeMasaDepan | #HIMAFORImpact</p>
   </footer>
 </main>
 </body>
